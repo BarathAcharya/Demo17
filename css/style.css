@@ -71,6 +71,7 @@ span{
   right:20px;
   color: #ff6324;
 }
+
 .hero{
   position:relative;
   width:100%;
@@ -84,6 +85,7 @@ span{
   line-height: 2rem;
   margin-bottom:0px;
   z-index:1000;
+  
 }
 .hero h1{
   font-weight:700;
@@ -233,4 +235,67 @@ background-color: #fff;
 }
 .fas{
   color:#ff6324;
+}
+#topfoot ul>li{
+  list-style: none;
+  
+}
+#topfoot{
+padding:30px;
+}
+.wave{
+  position: absolute;
+}
+
+/*  hr animation */
+@keyframes grow-and-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hg {
+  animation: grow-and-shrink 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* form animation */
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.fm {
+  animation: slide-in 1000ms;
+  animation-timing-function: linear;
+}
+
+/* card animation */
+
+@keyframes drop-in {
+  from {
+    transform:
+      rotate(-30deg) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform:
+      rotate(0deg) translateY(0%);
+    opacity: 1;
+  }
+}
+
+.card {
+  animation: drop-in 1000ms;
 }
